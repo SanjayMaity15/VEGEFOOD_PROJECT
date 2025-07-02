@@ -1,17 +1,145 @@
 /* ============= IMPORT GOOGLE FONT ============ */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* border: 1px solid purple; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --little-green: #82ae46;
+  --little-white: #fff;
+  --little-black: #1b1b1b;
+}
 
 /* ============= BASIC CSS STYLING ============ */
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 5rem;
+}
 
+li,
+p,
+a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  list-style: none;
+  color: var(--little-black);
+}
 
 /* ============= HEADER SECTION STYLING ============ */
 
+.nav-bar {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#brand-name {
+  font-size: 2.6rem;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  color: var(--little-green);
+  
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+#cart-icon {
+  transition: all 0.3s ease-in-out;
+
+  & i {
+    font-size: 2.2rem;
+  }
+}
+
+#cart-icon:hover {
+  color: brown;
+}
+
+#humburger{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+#close-menu{
+  display: none;
+  font-size: 2rem;
+}
 
 /* ============= MAIN SECTION STYLING ============ */
 
-
 /* ============= FOOTER SECTION STYLING ============ */
 
-
 /* ============= ADD MEDIA QUERY ============ */
+
+
+@media screen and (max-width : 768px) {
+  .desktop-menu{
+    display: none;
+  }
+
+  #humburger{
+    display: block;
+  }
+
+  .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: -100%;
+    transform: translateX(-50%);
+    background-color: lightgreen;
+    width: 50%;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid goldenrod;
+    transition: all 0.5s linear;
+  }
+
+  .mobile-menu-active{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .humburger-active{
+    display: block !important;
+  }
+}
