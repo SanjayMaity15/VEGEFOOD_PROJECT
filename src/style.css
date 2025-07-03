@@ -49,7 +49,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 #brand-name {
@@ -57,7 +56,6 @@ a {
   font-weight: bolder;
   letter-spacing: 0.1rem;
   color: var(--little-green);
-  
 }
 
 .nav-links-container {
@@ -87,36 +85,74 @@ a {
   color: brown;
 }
 
-#humburger{
+#humburger {
   display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
-#close-menu{
+#close-menu {
   display: none;
   font-size: 2rem;
 }
 
 /* ============= MAIN SECTION STYLING ============ */
 
+/* Hero section */
+
+.hero-section {
+  height: calc(100vh - 12vh);
+  max-width: 1280px;
+  position: relative;
+}
+
+.bg-hero {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.hero-section img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-heading {
+  position: absolute;
+  font-size: 6.6rem;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--little-white);
+  
+}
+
+
+.hero-bg-active{
+  display: block;
+  z-index: 99;
+}
+
+
+
 /* ============= FOOTER SECTION STYLING ============ */
 
 /* ============= ADD MEDIA QUERY ============ */
 
-
-@media screen and (max-width : 768px) {
-  .desktop-menu{
+@media screen and (max-width: 768px) {
+  .desktop-menu {
     display: none;
   }
 
-  #humburger{
+  #humburger {
     display: block;
   }
 
-  .mobile-menu{
+  .mobile-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -134,12 +170,12 @@ a {
     transition: all 0.5s linear;
   }
 
-  .mobile-menu-active{
+  .mobile-menu-active {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .humburger-active{
+  .humburger-active {
     display: block !important;
   }
 }
