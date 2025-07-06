@@ -48,7 +48,7 @@
 
       <a href="#" id="cart-icon">
         <i class="fa-solid fa-shopping-cart"></i>
-        <span>[0]</span>
+        <span id="cart-value">[0]</span>
       </a>
 
 
@@ -176,52 +176,108 @@
       <div class="product-box container">
         <div class="prod-card" id="card-1">
           <img src="images/product-1.jpg" alt="" class="pro-image">
-          <span class="item-price">$10</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">BELL PEPPER</p>
+          <span class="item-price">$10</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-2">
           <img src="images/product-2.jpg" alt="" class="pro-image">
-          <span class="item-price">$20</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">STRAWEBRRY</p>
+
+          <span class="item-price">$20</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-3">
           <img src="images/product-3.jpg" alt="" class="pro-image">
-          <span class="item-price">$30</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">GREEN BEANS</p>
+
+          <span class="item-price">$30</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-4">
           <img src="images/product-4.jpg" alt="" class="pro-image">
-          <span class="item-price">$40</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">PURPLE CABBAGE</p>
+
+          <span class="item-price">$40</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-5">
           <img src="images/product-5.jpg" alt="" class="pro-image">
-          <span class="item-price">$50</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">TOMATO</p>
+
+          <span class="item-price">$50</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-6">
           <img src="images/product-6.jpg" alt="" class="pro-image">
-          <span class="item-price">$60</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">BROCOLLI</p>
+
+          <span class="item-price">$60</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart"></i>
+          </a>
         </div>
         <div class="prod-card" id="card-7">
           <img src="images/product-7.jpg" alt="" class="pro-image">
-          <span class="item-price">$70</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">CARROTS</p>
+          
+          <span class="item-price">$70</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
         <div class="prod-card" id="card-8">
           <img src="images/product-8.jpg" alt="" class="pro-image">
-          <span class="item-price">$80</span><i class="fa-solid fa-shopping-cart"></i>
+          <p class="item-name">FRUIT JUICE</p>
+          
+          <span class="item-price">$80</span>
+          <a href="#" class="add-to-cart-btn">
+            <i class="fa-solid fa-shopping-cart "></i>
+          </a>
         </div>
 
       </div>
+
+      <div class="cart-tab">
+        <h3>Your Cart</h3>
+        <div class="item-list">
+          <!-- Dynamically add item to cart -->
+        </div>
+        <div class="total-price-container">
+          <h4>Total : </h4>
+          <h4 id="cart-total-price">0.00</h4>
+        </div>
+        <div class="cart-btn-container">
+          <a href="#" id="close" class="btn">Close</a>
+          <a href="#" id="payment" class="btn">Payment</a>
+        </div>
+      </div>
+
     </section>
 
-    <section id="deal-section">
-        <div class="deal-image">
-          <img src="images/bg_3.jpg" alt="" srcset="">
-        </div>
 
-        <div class="deal-content">
-          <p>Best price for you</p>
-          <h3>Deal of the day</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur hic culpa natus.</p>
-          <h4>Spinach</h4>
-          <p>$10 <span>now $5 only</span></p>
-        </div>
+    <section id="deal-section">
+      <div class="deal-image">
+        <img src="images/bg_3.jpg" alt="" srcset="">
+      </div>
+
+      <div class="deal-content">
+        <p>Best price for you</p>
+        <h3>Deal of the day</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur hic culpa natus.</p>
+        <h4>Spinach</h4>
+        <p>$10 <span>now $5 only</span></p>
+      </div>
     </section>
 
   </main>
@@ -230,7 +286,7 @@
 
 
   <footer>
-
+    <p>@copyright 2025 </p>
   </footer>
 
   <!-- ==================== AOS ANIMATIN JS CDN LINK ================= -->
